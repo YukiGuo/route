@@ -13,7 +13,7 @@ let routeHash={
 
 route();
 function route(){
-    let location=window.location.hash.substr(1)||"page1";
+    let location=window.location.hash.substr(1);
     let app=document.querySelector("#app");
     let div= document.createElement('div')
     div.innerHTML=routeHash[location]||routeHash["unfound"]
